@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="../static/profile.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <!--<img src="assets/rdj.jpeg" alt="">-->
+            <ul>
+                <li>User Details</li>
+                <li>Workout Records</li>
+                <li>Logout</li>
+                <!--<li>Actor</li>-->
+                <li>
+                    <i style="font-size:24px" class="fa"></i>
+                    <i style="font-size:24px" class="fa"></i>
+                    <i style="font-size:24px" class="fa"></i>
+                </li>
+            </ul>
+        </div>
+        <div class="About">
+            <form action="/editProfile" method="POST">
+                <ul>
+                    <h1>about</h1>
+                </ul>
+                <ul>
+                    <h3>Name</h3>
+                    <input type="text" id="name" class="fadeIn second" name="name" placeholder="name">
+                </ul>
+                <ul>
+                    <h3>Email</h3>
+                    <input type="email" id="login" class="fadeIn second" name="email" placeholder="email">
+                </ul><ul>
+                    <h3>Password</h3>
+                    <input type="password" id="password" class="fadeIn second" name="pass" placeholder="password">
+                </ul>
+                <ul>
+                    <h3>Body Weight (kg)</h3>
+                    <input type="number" id="weight" class="fadeIn third" name="weight" placeholder="weight">
+                </ul>
+                <ul>
+                    <h3>Body Height (cm)</h3>
+                    <input type="number" id="height" class="fadeIn third" name="height" placeholder="height">
+                </ul>
+                <input type="submit" class="fadeIn fourth" value="Update">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
